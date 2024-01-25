@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+/* 
+html tags - write directly
+class - write dot first, where dot is known as the selector 
+*/
+
+body {
+    background-color: rgb(225, 225, 251);
+}
+
+.name {
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.3s ease;
+}
+
+.name:hover {
+    color: purple;
+    text-shadow: black;
+    cursor: pointer;
+    animation: fadeIn 1s ease-out;
+    transform: scale(1.1);
+}
+
+.table1 {
+    border: 2px solid black;
+}
+
+img {
+    border-radius: 40px;
+    padding: 10px;
+    padding-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h2:hover {
+    color: rgb(76, 76, 239);
+    text-shadow: black;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 5fr 20fr 5fr;
+    gap: 15px;
+    height: 720px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: -24px 10px 9px 0px rgba(194,128,194,1);
+    margin: 10px;
+}
+
+.contents {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: large;
+    box-shadow: -4px 5px 5px 0px rgba(189,123,189,1);}
+
+footer {
+    background-color: beige;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.div1 {
+    background-color: aliceblue;
+}
+
+.div2 {
+    background-color: bisque;
+}
+
+.div3 {
+    background-color: aquamarine;
+}
+
+.div4 {
+    border-radius: 74px 10px 74px 10px;
+    box-shadow: -4px 5px 5px 0px rgba(189,123,189,1);
+    background-color: rgb(126, 196, 227);
+    margin: 30px;
+}
